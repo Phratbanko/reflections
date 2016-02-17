@@ -9,3 +9,6 @@ How can you use the staging area to make sure you have one commit per logical ch
 
 What are some situations when branches would be helpful in keeping your hisotry organized?  How would branches help?
 	When working on exploratory changes that may not make the "final cut" branching would be useful in that it does not affect the main branch.
+
+How do the diagrams help you visualize the branch structure?
+	Reachability is clearly illustrated by the visualizations.  All commits have a parent which is the previous commit.  By creating a branch you can possibly checkout a previous commit, make changes and never be able to see those changes.
