@@ -1,0 +1,5 @@
+What happens when you initialize a repository? Why do you need to do it?
+   You are essentially creating a new file that tracks the metadata of all commits.  You need to do this otherwise git will not store the information of all change sets.
+
+How is the staging area different from the working directory and the repository?  What value do you think it offers?
+	It allows you the opportunity to isolate files or changes to seperate commits when first initializing a repository.  It would give you the opportunity to pin-point an issue with code when first launching a repository.
