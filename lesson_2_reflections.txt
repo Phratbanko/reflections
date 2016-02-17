@@ -3,3 +3,6 @@ What happens when you initialize a repository? Why do you need to do it?
 
 How is the staging area different from the working directory and the repository?  What value do you think it offers?
 	It allows you the opportunity to isolate files or changes to seperate commits when first initializing a repository.  It would give you the opportunity to pin-point an issue with code when first launching a repository.
+
+How can you use the staging area to make sure you have one commit per logical change?
+	By using the command git diff you can compare what is in the staging area with what is in your local working area.
