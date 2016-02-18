@@ -1,14 +1,27 @@
 What happens when you initialize a repository? Why do you need to do it?
+   
    You are essentially creating a new file that tracks the metadata of all commits.  You need to do this otherwise git will not store the information of all change sets.
 
 How is the staging area different from the working directory and the repository?  What value do you think it offers?
+	
 	It allows you the opportunity to isolate files or changes to seperate commits when first initializing a repository.  It would give you the opportunity to pin-point an issue with code when first launching a repository.
 
 How can you use the staging area to make sure you have one commit per logical change?
+	
 	By using the command git diff you can compare what is in the staging area with what is in your local working area.
 
 What are some situations when branches would be helpful in keeping your hisotry organized?  How would branches help?
+	
 	When working on exploratory changes that may not make the "final cut" branching would be useful in that it does not affect the main branch.
 
 How do the diagrams help you visualize the branch structure?
+	
 	Reachability is clearly illustrated by the visualizations.  All commits have a parent which is the previous commit.  By creating a branch you can possibly checkout a previous commit, make changes and never be able to see those changes.
+
+What is the result of merging two branches together?  Why do we represent it in the diagram the way we do?
+	
+	All commits that took place within each branch are merged and conflicts are resolved.  When doing so the label of one of the branches is usually removed so the diagram reflects on single flow after a merge.
+
+What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+	
+	The pro's are that it will automatically identify any conflicts that may exist.  However this merge conflict resolution doesn't have the ability to decipher intent so it often results in false positives.
